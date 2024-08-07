@@ -14,7 +14,7 @@ function AboutUs() {
   return (
     <div>
         <Header/>
-        <div className="flex flex-col items-center gap-4 mb-5 mt-7">
+        <div className="flex flex-col items-center gap-4 mb-12 mt-7">
           <h1 className="text-3xl font-header text-h1Color">Sobre Nós</h1>
           <p className="text-center text-textBody">Nossa missão é simples: capacitar pessoas cegas e com baixa visão a gerenciar seus medicamentos de maneira independente e segura. A tecnologia pode ser uma ponte para a inclusão, e nosso objetivo é criar soluções que realmente façam a diferença na vida dos usuários.
           <br /> <br />
@@ -24,15 +24,19 @@ function AboutUs() {
 
         <div className="flex flex-col gap-4 mb-5">
           <h2 className="text-2xl font-header text-h1Color text-center">Nossos valores</h2>
-          <div className="mb-5">
+          <div className="mb-5 flex">
             <img src={CheckB} alt="" />
-            <h3 className="text-xl text-h1Color font-semibold">Acessibilidade</h3>
-            <p className=" text-textBody">Garantir que todos os produtos e serviços sejam totalmente acessíveis.</p>
+            <div>
+              <h3 className="text-xl text-h1Color font-semibold">Acessibilidade</h3>
+              <p className=" text-textBody">Garantir que todos os produtos e serviços sejam totalmente acessíveis.</p>
+            </div>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 flex">
             <img src={CheckB} alt="" />
-            <h3 className="text-xl text-h1Color font-semibold">Empatia</h3>
-            <p className=" text-textBody">Ouvir e entender as necessidades reais dos usuários para oferecer soluções verdadeiramente eficazes.</p>
+            <div>
+              <h3 className="text-xl text-h1Color font-semibold">Empatia</h3>
+              <p className=" text-textBody">Ouvir e entender as necessidades reais dos usuários para oferecer soluções verdadeiramente eficazes.</p>
+            </div>
           </div>
           <div className="mb-5">
             <img src={CheckB} alt="" />
