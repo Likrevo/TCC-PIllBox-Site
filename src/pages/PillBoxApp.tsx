@@ -63,6 +63,16 @@ export default function PillBoxApp() {
 
         <div className="w-full bg-bgCard h-0.5"></div>
     </div>
+    <div className="flex flex-col items-center gap-4 mb-5">
+        <h1 className="text-3xl font-header text-h1Color">2 - Passo a passo de uso da caixa</h1>
+        <h2 className="text-2xl font-header text-h1Color">Configuração inicial</h2>
+        <ul className="list-disc">
+            <li className="text-textBody">Organize seus medicamentos nos compartimentos da caixa. Cada compartimento pode ser etiquetado com informações em braille.</li>
+            <li className="text-textBody">A PillBox foi desenvolvida após extensa pesquisa e feedback de usuários reais e especialistas em saúde. O objetivo é proporcionar uma ferramenta que elimina as incertezas e dificuldades na administração de medicamentos, garantindo que cada dose seja tomada corretamente e no momento certo.</li>
+        </ul>
+
+        <div className="w-full bg-bgCard h-0.5"></div>
+    </div>
     <Footer/>
 </div>
   )
