@@ -16,14 +16,14 @@ function AboutUs() {
     <div>
         <Header/>
         <section className="flex flex-col items-center">
-        <div className="flex flex-col items-center gap-4 mb-12 mt-7">
-          <div className="w-[900px]">
-          <h1 className="text-3xl font-header text-h1Color">Sobre Nós</h1>
-          <p className="text-center text-textBody">Nossa missão é simples: capacitar pessoas cegas e com baixa visão a gerenciar seus medicamentos de maneira independente e segura. A tecnologia pode ser uma ponte para a inclusão, e nosso objetivo é criar soluções que realmente façam a diferença na vida dos usuários.
+        <div className="flex flex-col items-center gap-4 mb-12 mt-7 md:mb-52">
+          <div className="md:w-[900px] items-center flex flex-col ">
+          <h1 className="text-3xl font-header text-h1Color md:text-6xl md:mb-8">Sobre nós</h1>
+          <p className="text-center text-textBody md:text-justify md:mb-7">Nossa missão é simples: capacitar pessoas cegas e com baixa visão a gerenciar seus medicamentos de maneira independente e segura. A tecnologia pode ser uma ponte para a inclusão, e nosso objetivo é criar soluções que realmente façam a diferença na vida dos usuários.
           <br /> <br />
           A paixão pela inovação e pela acessibilidade impulsiona a equipe da PillBox a continuar evoluindo e aprimorando as soluções, para que possamos sempre oferecer o melhor em termos de tecnologia assistiva.</p>
           </div>
-          <img src={AboutImg} alt="" className="md:w-[1120px]"/>
+          <img src={AboutImg} alt="" className="md:w-[820px]"/>
         </div>
 
         <div className="flex flex-col md:flex-row md:w-[1150px] md:h-[570px] md:justify-center md:items-center md:mb-24">
