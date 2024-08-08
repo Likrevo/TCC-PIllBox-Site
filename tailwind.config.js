@@ -58,7 +58,8 @@ module.exports = {
         bgCard: '#0044E3',
         linearColor1: '#0C98FE',
         linerColor2:'#0044E3',
-        textBody: '#7D848D'
+        textBody: '#7D848D',
+        gradienteLeft: '#00257D'
       },
       fontFamily: {
         header: ['Righteous'],

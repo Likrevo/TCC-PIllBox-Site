@@ -15,16 +15,20 @@ function AboutUs() {
   return (
     <div>
         <Header/>
+        <section className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-4 mb-12 mt-7">
+          <div className="w-[900px]">
           <h1 className="text-3xl font-header text-h1Color">Sobre Nós</h1>
           <p className="text-center text-textBody">Nossa missão é simples: capacitar pessoas cegas e com baixa visão a gerenciar seus medicamentos de maneira independente e segura. A tecnologia pode ser uma ponte para a inclusão, e nosso objetivo é criar soluções que realmente façam a diferença na vida dos usuários.
           <br /> <br />
           A paixão pela inovação e pela acessibilidade impulsiona a equipe da PillBox a continuar evoluindo e aprimorando as soluções, para que possamos sempre oferecer o melhor em termos de tecnologia assistiva.</p>
-          <img src={AboutImg} alt="" />
+          </div>
+          <img src={AboutImg} alt="" className="md:w-[1120px]"/>
         </div>
 
-        <div className="flex flex-col gap-4 mb-5">
-          <h2 className="text-2xl font-header text-h1Color text-center">Nossos valores</h2>
+        <div className="flex flex-col md:flex-row md:w-[1150px] md:h-[570px] md:justify-center md:items-center md:mb-24">
+          <div className="flex flex-col gap-4 mb-5">
+          <h2 className="text-2xl font-header text-h1Color text-center md:text-6xl md:mb-10">Nossos valores</h2>
           <div className="mb-5 flex gap-4">
             <img src={CheckB} alt="" />
             <div>
@@ -53,40 +57,46 @@ function AboutUs() {
             <p className=" text-textBody">Promover a independência de nossos usuários em suas rotinas de saúde.</p>
             </div>
           </div>
-          <img src={ValueImg} alt="" className="mb-5"/>
+          </div>
+          <img src={ValueImg} alt="" className="mb-5 md:w-[480px]"/>
         </div>
 
-        <div className="flex flex-col gap-4 mb-5">
-          <h2 className="text-2xl font-header text-h1Color text-center">Nosso time</h2>
-          <p className="text-center text-textBody">Com uma equipe dedicada de desenvolvedores, designers e especialistas em saúde, estamos comprometidos em ouvir, entender e atender às necessidades dos usuários. Cada funcionalidade do nosso aplicativo foi desenvolvida com base em feedback real, garantindo que seja intuitiva, acessível e, acima de tudo, útil.</p>
+        <div className="flex flex-col gap-4 mb-5 md:mb-10">
+          <h2 className="text-2xl font-header text-h1Color text-center md:text-6xl">Nosso time</h2>
+          <div className="md:w-[890px]">
+          <p className="text-center text-textBody md:text-justify">Com uma equipe dedicada de desenvolvedores, designers e especialistas em saúde, estamos comprometidos em ouvir, entender e atender às necessidades dos usuários. Cada funcionalidade do nosso aplicativo foi desenvolvida com base em feedback real, garantindo que seja intuitiva, acessível e, acima de tudo, útil.</p>
+          </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          <img src={Mateus} alt="Mateus" />
-          <img src={Gustavo} alt="Gustavo" />
-          <img src={Caua} alt="Cauã" />
-          <img src={Otavio} alt="Otávio" />
+        <div className="flex flex-wrap justify-center gap-2 mb-12 md:mb-24 md:gap-6">
+          <img src={Mateus} alt="Mateus" className="md:w-[300px]"/>
+          <img src={Gustavo} alt="Gustavo" className="md:w-[300px]"/>
+          <img src={Caua} alt="Cauã" className="md:w-[300px]"/>
+          <img src={Otavio} alt="Otávio" className="md:w-[300px]"/>
         </div>
 
-        <div className="bg-gradient-to-b from-blue-500 to-cyan-500 pt-8 pb-10 px-8 mb-28">
-        <h1 className="text-2xl font-header text-white text-center mb-2">Fale Conosco</h1>
+        <section className="flex justify-center">
+        <div className="bg-gradient-to-b from-blue-500 to-cyan-500 pt-8 pb-10 px-8 mb-28 md:bg-gradient-to-br md:from-gradienteLeft md:via-linearColor1 md:via-80% md:to-linearColor1 md:flex md:flex-col md:items-center md:justify-center md:w-[1150px] md:h-[680px]">
+        <h1 className="text-2xl font-header text-white text-center mb-2 md:text-6xl md:mb-8 md:mt-5">Fale conosco</h1>
         <form>
-            <div className="flex flex-col mb-5">
+            <div className="flex flex-col mb-5 md:w-[650px] md:flex md:flex-col md:justify-center">
                 <label htmlFor="name" className="text-white">Nome</label>
-                <input className="rounded-md placeholder:text-h1Color py-1.5 pl-0.5" type="text" name="Nome" id="name" placeholder="Digite seu nome" required/>
+                <input className="rounded-md placeholder:text-h1Color py-1.5 pl-0.5 md:px-1.5" type="text" name="Nome" id="name" placeholder="Digite seu nome" required/>
             </div>
-            <div className="flex flex-col mb-5">
+            <div className="flex flex-col mb-5 md:flex md:flex-col md:justify-center">
                 <label htmlFor="email" className="text-white">Email</label>
-                <input className="rounded-md placeholder:text-h1Color py-1.5 pl-0.5" type="email" id="email" name="email" placeholder="Digite seu email" required/>
+                <input className="rounded-md placeholder:text-h1Color py-1.5 pl-0.5 md:mb-7 md:px-1.5" type="email" id="email" name="email" placeholder="Digite seu email" required/>
             </div>
-            <div className="flex flex-col mb-10">
+            <div className="flex flex-col mb-10 md:flex md:flex-col md:justify-center">
                 <label htmlFor="feedback" className="text-white">Feedback</label>
-                <textarea className="rounded-md placeholder:text-h1Color pl-0.5 pt-1.5 pb-28" id="feedback" name="feedback" placeholder="Digite seu feedback" required></textarea>
+                <textarea className="rounded-md placeholder:text-h1Color pl-0.5 pt-1.5 pb-28 resize-none md:px-1.5" id="feedback" name="feedback" placeholder="Digite seu feedback" required></textarea>
             </div>
             <div className="flex justify-center text-center">
                 <button type="submit" className="py-3 px-24 bg-linerColor2 rounded-md text-white">Enviar</button>
             </div>
         </form>
         </div>
+        </section>
+        </section>
 
         <Footer/>
     </div>
